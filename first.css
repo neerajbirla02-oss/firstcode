@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+header .top-bar {
+    background: #29323c;
+    color: #fff;
+    padding: 8px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+header .logo {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: purple;
+    font-size: larger;
+    float: right;
+    
+}
+.nav-icons a {
+    margin-left: 20px;
+    color: #333;
+    font-size: 1.2em;
+}
+.hero {
+    background: grey;
+    margin: 32px 0;
+    padding: 32px 10vw;
+    display: flex;
+    justify-content: center;
+}
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    ;
+}
+.hero-text h2 {
+    font-size: 2.3em;
+    margin-bottom: 4px;
+    color: black
+}
+.hero-text p {
+    font-size: 1.1em;
+    color:black;
+    margin-bottom: 8px;
+    font-size: large;
+}
+
+
+.hero-image img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 12px;
+}
+.categories {
+    background: #160303;
+    padding: 32px 0;
+    text-align: center;
+}
+.categories h3 {
+    font-size: 1.5em;
+    color: white;
+}
+.categories p {
+    color: white;
+    margin-bottom: 28px;
+}
+.category-items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.category {
+    background: #fff;
+    padding: 24px 12px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    width: 160px;
+    text-align: center;
+}
+.category img {
+    margin-bottom: 10px;
+    border-radius: 70%;
+    width: 90px;
+    height: 90px;
+    
+}
+.category h4 {
+    margin: 4px 0;
+    font-size:large;
+}
+.category button {
+    margin-top: 10px;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 7px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.featured-products {
+    background: grey;
+    padding: 36px 0;
+    text-align: center;
+}
+.featured-products h3 {
+    color: #222;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-decoration:underline
+    
+}
+.products {
+    display:flex;
+    justify-content: center;
+    gap: 40px;
+}
+.product-card {
+    background:white;
+    padding: 22px 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    width: 210px;
+    text-align: left;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.product-card h4 {
+    margin: 6px 0;
+    font-size:larger;
+}
+.product-card p {
+    font-size: large;
+    color: #666;
+    margin-bottom: 8px;
+}
+.product-card span {
+    font-weight: bold;
+    color:green;
+}
+.product-card .reviews {
+    color: #999;
+    font-size: large;
+}
+footer {
+    background: #29323c;
+    color: #fff;
+    padding-top: 36px;
+    margin-top: 40px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw 18px 10vw;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    margin-right: 40px;
+    min-width: 160px;
+}
+.footer-section h4 {
+    font-size: larger;
+    margin-bottom: 10px;
+    color:darksalmon;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 7px;
+    color: #dcdcdc;
+}
+.footer-section.newsletter input[type="email"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 6px;
+    width: 120px;
+}
+.footer-section.newsletter button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1em;
+    background: #262d36;
+    color: #aaaaaa;
+}
+@media screen and (max-width: 900px){
+    .hero, .footer-content {
+        flex-direction: column;
+        padding: 24px 4vw;
+    }
+    .products, .category-items {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card, .category {
+        width: 80vw;
+        margin-bottom: 22px;
+    }
+}
