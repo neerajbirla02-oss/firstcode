@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #18191a;
+    font-family: 'Segoe UI', Calibri, sans-serif;
+    margin: 0;
+}
+
+.card {
+    width: 340px;
+    
+    background: #22232a;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 22px 18px 28px 18px;
+    position: relative;
+    box-shadow: 0 0 24px 0 #141517;
+    animation: show 1s;
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 18px;
+    border-radius: 13px;
+    
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    overflow: hidden;
+    
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 0 18px 0 lightgreen;
+}
+
+h2 {
+    color: #1cdcee;
+    font-size: 1.45rem;
+    margin: 4px 0 7px 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.role {
+    color: #c7ffe0;
+    font-size: 1.02rem;
+    margin-bottom: 18px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0 23px 0;
+    padding: 0 8px;
+}
+
+.stats h3 {
+    margin: 0;
+    color: #1cdcee;
+    font-size: 1.16rem;
+    font-weight: bold;
+}
+
+.stats span {
+    font-size: 12px;
+    color: #bdbdbd;
+    font-weight: normal;
+}
+
+.buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.button {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.07rem;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+
+.follow {
+    background: linear-gradient(90deg, yellow
+    
+    );
+    color: #18191a;
+}
+
+.follow:hover {
+    background: #0db2c6;
+    color: white;
+}
+
+
+.message {
+    background: #fff;
+    color: #18191a;
+}
+
+.message:hover {
+    background: #e0e0e0;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
